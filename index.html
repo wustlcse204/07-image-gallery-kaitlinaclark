@@ -16,11 +16,11 @@
 
     </head>
     <body>
-        <div class="jumbotron">
-            <h1> Kaitlin's Image Galley </h1>
-        </div>
         <!--grid of 12 images-->
         <div class="container">
+            <div class="jumbotron">
+                <h1> Kaitlin's Image Galley </h1>
+            </div>
             <!--row 1-->
             <div class="row">
               <div class="col-sm">
@@ -117,7 +117,7 @@
             <!--close button-->
             <span id="close">&times;</span> 
             <!--image slides-->
-            <div class="slide1">
+            <div class="slide1" >
                 <img src="images/AnimalCell.jpg">
             </div>
             <div class="slide2">
@@ -161,6 +161,7 @@
 
         <!--JS-->
         <script>
+            let last_img = 0;
             /////////////
             ////CLOSE////
             ////////////
@@ -178,11 +179,21 @@
             ///////////////////
             document.getElementById("prev").addEventListener("click", (event) =>{
                 event.preventDefault();
-
+                //check length
+                if(last_img == 1){
+                    display(12);
+                }else{
+                    display(last_img-1);
+                }
             }, true);
             document.getElementById("next").addEventListener("click", (event) =>{
                 event.preventDefault();
-
+                //check length
+                if(last_img == 12){
+                    display(1);
+                }else{
+                    display(last_img+1);
+                }
             }, true);
             ////////////////////////////////
             ////event listeners for images///
@@ -193,7 +204,6 @@
                     let id = "img"+img;
                     document.getElementById(id).addEventListener("click", function(event){
                     event.preventDefault();
-                    console.log("image "+img+" was clicked");
                     display(img); //display carousel, starting with img 1
                 }, true);
                 }());
@@ -202,12 +212,23 @@
             //////DISPLAY//////
             ///////////////////
             function display(img_id){
-                console.log("Image "+img_id+" was clicked");
+                last_img = img_id;
                 //hide gallery
                 document.getElementsByClassName("container")[0].setAttribute("style", "display:none;");
 
                 //display carousel
                 document.getElementsByClassName("carousel")[0].setAttribute("style", "display: block;");
+
+                //hide all images
+                for(let j = 0; j < 12; j++){
+                    var id = j+1;
+                    var cl = "slide"+id;
+                    document.getElementsByClassName(cl)[0].setAttribute("style", "display:none;");
+                }
+
+                //display image
+                document.getElementsByClassName("slide"+img_id)[0].setAttribute("style", "display: block;");
+            
             }
 
         </script>
