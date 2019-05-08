@@ -16,88 +16,201 @@
 
     </head>
     <body>
-        <!--header-->
-        <header>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="collapse navbar-collapse justify-content-center" id="navbar">
-                    <ul class="navbar-nav">
-                        <li><a class="nav-link" href="#home">Home</a></li>
-                        <li><a class="nav-link" href="#aboutus">About Us</a></li>
-                        <li><a class="nav-link" href="#services">Services</a></li>
-                        <li><a class="nav-link" href="#portfolio">Portfolio</a></li>           
-                        <li><a class="nav-link" href="#blog">Blog</a></li>
-                        <li><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
         <div class="jumbotron">
             <h1> Kaitlin's Image Galley </h1>
         </div>
         <!--grid of 12 images-->
         <div class="container">
-            
             <!--row 1-->
             <div class="row">
               <div class="col-sm">
-                
-                <img src="images/AnimalCell.jpg"><div class="caption">Image 1</div></img>
+                  <a href="#" id="img1">
+                    <img src="images/AnimalCell.jpg" />
+                    <div class="caption">Image 1</div>
+                  </a>
               </div>
               <div class="col-sm">
-                <img src="images/BIGtoe.png">
-                <div class="caption">Image 2</div>
+                <a href="#" id="img2">
+                    <img src="images/BIGtoe.png" >
+                    <div class="caption">Image 2</div>
+                </a>
               </div>
               <div class="col-sm">
-                <div class="caption">Image 3</div>
-                <img src="images/BRAF_V600E.png">
+                  <a href="#" id="img3">
+                      <div class="caption">Image 3</div>
+                    <img src="images/BRAF_V600E.png" >
+                  </a>
               </div>
             </div>
             <!--row 2-->
             <div class="row">
                 <div class="col-sm">
-                    <div class="caption">Image 4</div>
-                    <img src="images/BRAFex.png">
+                    <a href="#" id="img4">
+                        <div class="caption">Image 4</div>
+                        <img src="images/BRAFex.png" >
+                    </a>
                 </div>
                 <div class="col-sm">
-                    <div class="caption">Image 5</div>
-                    <img src="images/BRAFgene.png">
-                </div>
+                    <a href="#" id="img5">
+                        <div class="caption">Image 5</div>
+                        <img src="images/BRAFgene.png" >
+                    </a>
+                    </div>
                 <div class="col-sm">
-                    <div class="caption">Image 6</div>
-                    <img src="images/CIViC crowd space.png">
-                </div>
+                    <a href="#" id="img6">
+                        <div class="caption">Image 6</div>
+                        <img src="images/CIViC crowd space.png" >
+                    </a>
+                    </div>
             </div>
             <!--row 3-->
             <div class="row">
                 <div class="col-sm">
-                    <div class="caption">Image 7</div>
-                    <img src="images/CIViC flow.png">
+                    <a href="#" id="img7">
+                        <div class="caption">Image 7</div>
+                        <img src="images/CIViC flow.png" >
+                    </a>
+                    
                 </div>
                 <div class="col-sm">
-                    <div class="caption">Image 8</div>
-                    <img src="images/CNS hb.gif">
+                    <a href="#" id="img8">
+                        <div class="caption">Image 8</div>
+                        <img src="images/CNS hb.gif" >
+                    </a>
+                    
                 </div>
                 <div class="col-sm">
-                    <div class="caption">Image 9</div>
-                    <img src="images/Cytoskeleton.jpg">
+                    <a href="#" id="img9">
+                        <div class="caption">Image 9</div>
+                        <img src="images/Cytoskeleton.jpg" >
+                    </a>
+                    
                 </div>
             </div>
             <!--row 4-->
             <div class="row">
                 <div class="col-sm">
-                    <div class="caption">Image 10</div>
-                    <img src="images/Flagella.jpg">
+                    <a href="#" id="img10">
+                        <div class="caption">Image 10</div>
+                        <img src="images/Flagella.jpg" >
+                    </a>
+                    
                 </div>
                 <div class="col-sm">
-                    <div class="caption">Image 11</div>
-                    <img src="images/amino.png">
+                    <a href="#" id="img11">
+                        <div class="caption">Image 11</div>
+                        <img src="images/amino.png" >
+                    </a>
+                    
                 </div>
                 <div class="col-sm">
-                    <div class="caption">Image 12</div>
-                    <img src="images/aqpr2.png">
+                    <a href="#" id="img12">
+                        <div class="caption">Image 12</div>
+                        <img src="images/aqpr2.png" >
+                    </a>
+                    
                 </div>
             </div>
         </div>
+        <div class="carousel">
+            <!--button function from: https://www.w3schools.com/howto/howto_js_slideshow.asp-->
+            <!--close button-->
+            <span id="close">&times;</span> 
+            <!--image slides-->
+            <div class="slide1">
+                <img src="images/AnimalCell.jpg">
+            </div>
+            <div class="slide2">
+                <img src="images/BIGtoe.png">
+            </div>
+            <div class="slide3">
+                <img src="images/BRAF_V600E.png">
+            </div>
+            <div class="slide4">
+                <img src="images/BRAFex.png">
+            </div>
+            <div class="slide5">
+                <img src="images/BRAFgene.png">
+            </div>
+            <div class="slide6">
+                <img src="images/CIViC crowd space.png">
+            </div>
+            <div class="slide7">
+                <img src="images/CIViC flow.png">
+            </div>
+            <div class="slide8">
+                <img src="images/CNS hb.gif">
+            </div>
+            <div class="slide9">
+                <img src="images/Cytoskeleton.jpg">
+            </div>
+            <div class="slide10">
+                <img src="images/Flagella.jpg">
+            </div>
+            <div class="slide11">
+                <img src="images/amino.png">
+            </div>
+            <div class="slide12">
+                <img src="images/aqpr2.png">
+            </div>
+
+            <!--prev + next buttons-->
+            <a id="prev" >&#10094;</a>
+            <a id="next" >&#10095;</a>
+        </div>
+
+        <!--JS-->
+        <script>
+            /////////////
+            ////CLOSE////
+            ////////////
+            document.getElementById("close").addEventListener("click", (event) =>{
+                event.preventDefault();
+                //hide carousel 
+                document.getElementsByClassName("carousel")[0].setAttribute("style", "display:none;");
+
+                //display gallery
+                document.getElementsByClassName("container")[0].setAttribute("style", "display: block;");
+
+            }, true);
+            ////////////////////
+            ///PREV + NEXT//////
+            ///////////////////
+            document.getElementById("prev").addEventListener("click", (event) =>{
+                event.preventDefault();
+
+            }, true);
+            document.getElementById("next").addEventListener("click", (event) =>{
+                event.preventDefault();
+
+            }, true);
+            ////////////////////////////////
+            ////event listeners for images///
+            /////////////////////////////////
+            for(let i = 0; i < 12; i++){
+                (function(){
+                    let img = i+1;
+                    let id = "img"+img;
+                    document.getElementById(id).addEventListener("click", function(event){
+                    event.preventDefault();
+                    console.log("image "+img+" was clicked");
+                    display(img); //display carousel, starting with img 1
+                }, true);
+                }());
+            }
+            ///////////////////
+            //////DISPLAY//////
+            ///////////////////
+            function display(img_id){
+                console.log("Image "+img_id+" was clicked");
+                //hide gallery
+                document.getElementsByClassName("container")[0].setAttribute("style", "display:none;");
+
+                //display carousel
+                document.getElementsByClassName("carousel")[0].setAttribute("style", "display: block;");
+            }
+
+        </script>
 
     </body>
 </html>

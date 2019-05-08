@@ -1,6 +1,10 @@
 *{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+.jumbotron{
+    text-align: center;
+}
+/*image gallery */
 div.caption{
     font-size: 20px;
     opacity: 0; 
@@ -21,7 +25,7 @@ div.col-sm:hover{
     border-width: 5px;
     border-color: blue purple green pink;
 }
-div.col-sm:hover div.caption{
+div.col-sm:hover a div.caption{
     opacity: 1;
 }
 
@@ -34,6 +38,33 @@ div.col-sm{
     padding: 6px;
 }
 
-.jumbotron{
-    text-align: center;
+/* carousel */
+.carousel{
+    display: none; /*hide by default*/
+    background: rgba(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5); 
+    width: 100%;
+    height: 100%;
+}
+/*center image*/
+.carousel div{
+    margin: auto;
+    width: 50%;
+}
+#prev, #next{
+    position: absolute;
+    /*center*/ 
+    top: 50%;
+    /*text*/
+    color: greenyellow;
+    font-weight: bold;
+    font-size: 35px;
+}
+#close, #next{
+    position: absolute;
+    /*move to right*/
+    right: 0;
+    font-weight: bold;
+    color: greenyellow;
+    font-size: 35px;
 }
